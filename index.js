@@ -9,7 +9,7 @@ const fs = require('fs'); // Import fs to handle file system operations (like de
 const cors = require('cors'); // Import CORS to allow cross-origin requests
 
 const app = express(); // Create an Express app
-const port = 4000; // Define the port where the server will run
+const port = process.env.PORT || 4000; // Use the dynamic port assigned by Heroku or fallback to port 4000 for local development
 
 // Enable CORS to allow requests from different origins
 app.use(cors());
