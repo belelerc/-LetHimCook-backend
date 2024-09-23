@@ -97,5 +97,5 @@ app.get('/recipe/:id', async (req, res) => {
 // Start the server
 console.log('Server wird gestartet...'); // Log message to indicate server start
 app.listen(port, () => {
-  console.log(`Backend läuft auf http://localhost:${port}`); // Log the server's running URL
+  console.log(`Backend läuft auf port:${port}`); // Log the server's running URL
 });
